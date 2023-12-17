@@ -106,7 +106,8 @@ function gameOver() {
         return
     } 
 
-    audio = new Audio('../audio/game-over.mp3')
+    // audio = new Audio('../audio/game-over.mp3')
+    audio = new Audio('audio/game-over.mp3')
     audio.play()
     
 }

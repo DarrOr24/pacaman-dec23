@@ -43,13 +43,13 @@ function onMovePacman(ev){
     
     
     if(nextCell === FOOD){
-        var audio = new Audio('../audio/eaten-ball.mp3')
+        var audio = new Audio('audio/eaten-ball.mp3')
         audio.play()
         updateScore(1)  
     }   
     
     if(nextCell === CHERRY){
-        audio = new Audio('../audio/cherry.mp3')
+        audio = new Audio('audio/cherry.mp3')
         audio.play()
         updateScore(10) 
     }    
@@ -98,7 +98,7 @@ function getNextLocation(eventKeyboard) {
 
 function superPowerMode(){
     
-    var audio = new Audio('../audio/super.mp3')
+    var audio = new Audio('audio/super.mp3')
     audio.play()
 
     gPacman.isSuper = true
@@ -113,7 +113,7 @@ function superPowerMode(){
 }
 
 function eatingGhost(nextLocation){
-    var audio = new Audio('../audio/ghost.mp3')
+    var audio = new Audio('audio/ghost.mp3')
     audio.play()
 
     for (var i = 0 ; i < gGhosts.length; i++){
